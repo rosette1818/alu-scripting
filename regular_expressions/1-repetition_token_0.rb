@@ -1,7 +1,4 @@
 #!/usr/bin/env ruby
 
-if ARGV[0] =~ /hbt{2,5}n/
-  puts "Matched"
-else
-  puts "No match"
-end
+result = ARGV[0].match(/hbt{2,5}n/)
+puts result[0] if result
